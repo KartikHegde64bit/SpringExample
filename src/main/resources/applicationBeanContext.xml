@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="myBean" class="car.example.bean.MyBean">
+        <!-- these will provide the default values for the properties of the bean -->
+        <property
+            name="message" value="Hello world. I am bean initialised">
+        </property>
+    </bean>
+
+</beans>
