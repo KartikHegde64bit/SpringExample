@@ -14,4 +14,7 @@
     <bean id="myCar" class="car.example.constructor.injection.Car">
         <constructor-arg ref="carSpecification"/>
     </bean>
+
+    <bean id="userDataProvider" class="com.loose.coupling.UserDatabaseProvider"> </bean>
+    <bean id="webDataProvider" class="com.loose.coupling.WebDataProvider"> </bean>
 </beans>
