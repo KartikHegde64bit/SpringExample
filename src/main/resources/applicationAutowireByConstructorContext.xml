@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="specification" class = "com.autowire.byConstructor.Specification">
+        <property name="wheelType" value="hard"/>
+        <property name="frameType" value="StainlessSteel"/>
+        <property name="engineType" value="V8"/>
+    </bean>
+
+    <bean id="defaultCar" class="com.autowire.byConstructor.Car" autowire="constructor">
+
+    </bean>
+</beans>
